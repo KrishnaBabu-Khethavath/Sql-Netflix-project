@@ -1,15 +1,18 @@
-# Sql-Netflix-project
+# 📺 Sql-Netflix-project
 ![net](https://github.com/KrishnaBabu-Khethavath/Sql-Netflix-project/blob/main/logo%20(1).png)
 
-## Overview
+## 📊 Overview
 This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
-## Objectives
+
+## 🎯 Objectives
 - Analyze the distribution of content types (movies vs TV shows).
 - Identify the most common ratings for movies and TV shows.
 - List and analyze content based on release years, countries, and durations.
 - Explore and categorize content based on specific criteria and keywords.
-# Dataset :[Click Here](https://github.com/KrishnaBabu-Khethavath/Sql-Netflix-project/blob/main/netflix_titles.csv)
-# Sql queries 👇:
+
+## 📁 Dataset : [Click Here](https://github.com/KrishnaBabu-Khethavath/Sql-Netflix-project/blob/main/netflix_titles.csv)
+
+## 📜 Sql queries 👇
 
 ```sql
 -- Easy Level Questions:
@@ -158,7 +161,6 @@ SELECT COUNT(*) as count
 FROM netflix
 WHERE TO_DATE(date_added, 'Month DD, YYYY') >= (CURRENT_DATE - INTERVAL '6 months');
 
-
 -- 7.Find the titles with the most number of actors listed in their cast.
 SELECT title, LENGTH(casts) - LENGTH(REPLACE(casts, ',', '')) + 1 as number_of_actors
 FROM netflix
@@ -173,3 +175,8 @@ FROM netflix
 GROUP BY rating, type
 ORDER BY type, percentage DESC;
 ```
+🏁 Conclusion
+- Content Distribution: The dataset contains a diverse range of movies and TV shows with varying ratings and genres. 
+- Common Ratings: Insights into the most common ratings provide an understanding of the content's target audience.
+- Geographical Insights: The top countries and the average content releases by India highlight regional content distribution. 
+- Content Categorization: Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
