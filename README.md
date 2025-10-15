@@ -1,4 +1,4 @@
-# 📺 Sql-Netflix-project
+# 📺 SQL-Netflix Data Analysis -project
 ![net](https://github.com/KrishnaBabu-Khethavath/Sql-Netflix-project/blob/main/logo%20(1).png)
 
 ## 📊 Overview
